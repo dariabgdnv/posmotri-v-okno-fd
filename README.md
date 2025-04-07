@@ -1,1 +1,1 @@
-Проект_Посмотри в окно
+https://github.com/dariabgdnv/posmotri-v-okno-fd.git
