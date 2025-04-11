@@ -52,13 +52,14 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   gap: 30px;
+  align-items: end;
 }
 
 .result {
   display: flex;
-  padding-top: 211px;
+  margin-bottom: 46px;
   flex-direction: column;
   gap: 12px;
 }
@@ -102,6 +103,10 @@ ol {
 
 .search-form__label:hover {
   cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text { 
+  text-decoration: underline; 
 }
 
 .label:has(:focus-visible) {
@@ -202,10 +207,10 @@ ol {
 }
 
 .content__details {
-  padding-top: 138px;
   display: flex;
   flex-direction: column;
   gap: 23px;
+  padding-top: 47px;
 }
 
 .title {
@@ -233,7 +238,7 @@ ol {
   letter-spacing: 0.4px;
   text-transform: uppercase;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: auto;
   text-overflow: ellipsis;
 }
 
@@ -261,6 +266,10 @@ ol {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -298,6 +307,7 @@ ol {
 }
 
 .button {
+  font-family: inherit;
   font-size: 18px;
   color: white;
   border: solid 1px white;
