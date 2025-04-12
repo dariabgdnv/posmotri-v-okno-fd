@@ -8,6 +8,16 @@ html {
   block-size: 100%;
 }
 
+/* 
+Вы мне не раз оставляете комменатарий насчет отображения верстки. 
+Но у меня макет с версткой совпадает.
+
+Я экспортировала макет из фигма, установив масштаб «1x». После добавила слой и совместила макет с вёрсткой, 
+установив масштаб «1.0» в окне расширения и координаты равные 0, а в инструментах разработчика включила 
+мобильный режим и ввела ширину — в  «1200», а высоту в «800», как в макете - по совету наставника.
+Я не понимаю в таком случае, на что мне нужно ориентироваться. 
+*/
+
 .page {
   display: flex;
   justify-content: center;
@@ -88,15 +98,15 @@ ol {
 }
 
 .search-form__fieldset {
-  width: 225px;
   border: none;
 }
 
 .search-form__label {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: flex-start; 
   gap: 5px;
+  margin-top: 2px;
 }
 
 .search-form__label:focus-within  {
@@ -124,14 +134,14 @@ ol {
 }
 
 .search-form__textfield {
-  min-width: 236px;
+  min-width: 225px;
   border: inherit;
   border-bottom: solid 1px currentColor;
   border-top: solid 1px white;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
   background-color: inherit;
-  font-size: 18px;
+  font-size: 17px;
   color: white;
 }
 
@@ -149,11 +159,19 @@ ol {
 }
 
 .search-form__checkbox-list  {
+  width: 212px;
   display: flex;
   gap: 15px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding-bottom: 3px;
 } 
+
+.search-form__fieldset_checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 
 .search-form__pseudo-checkbox {
   display: flex;
@@ -214,7 +232,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 23px;
-  padding-top: 47px;
+  padding-top: 49px;
 }
 
 .title {
@@ -237,9 +255,10 @@ ol {
 
 .content__video-card-title {
   width: 196px;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: auto;
@@ -268,6 +287,7 @@ ol {
 
 .content__video-card {
   display: flex;
+  gap: 2px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -301,6 +321,9 @@ ol {
 }
 
 .content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   width: 190px;
   flex-grow: 1;
 }
