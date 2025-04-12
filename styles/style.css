@@ -261,7 +261,7 @@ ol {
   letter-spacing: 0.2px;
   text-transform: uppercase;
   white-space: nowrap;
-  overflow: auto;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
