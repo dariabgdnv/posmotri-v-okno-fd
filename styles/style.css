@@ -73,7 +73,6 @@ ol {
 
 .result {
   display: flex;
-  margin-bottom: 46px;
   flex-direction: column;
   gap: 12px;
 }
@@ -232,7 +231,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 23px;
-  padding-top: 49px;
 }
 
 .title {
@@ -268,7 +266,7 @@ ol {
 .content__list-container {
   position: relative;
   width: 398px;
-  height: 342px;
+  height: 298px;
   overflow: auto;
   overflow-x: hidden;
 }
